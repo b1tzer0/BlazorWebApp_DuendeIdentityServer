@@ -1,0 +1,12 @@
+﻿@inject NavigationManager Navigation
+@attribute [RenderModeWebAssembly]
+
+
+@code {
+    protected override void OnAfterRender(bool firstRender)
+    {
+        base.OnAfterRender(firstRender);
+        var returnUrl = Uri.EscapeDataString("/" + Navigation.ToBaseRelativePath(Navigation.Uri));
+        Navigation.NavigateTo($"bff/login?returnUrl={returnUrl}", forceLoad: true);
+    }
+}

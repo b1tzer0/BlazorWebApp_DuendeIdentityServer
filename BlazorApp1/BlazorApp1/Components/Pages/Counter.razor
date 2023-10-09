@@ -1,0 +1,8 @@
+﻿@page "/counter"
+@using Microsoft.AspNetCore.Authorization;
+@attribute [Authorize]
+
+<!-- Temporary workaround until MapRazorComponents supports AddAdditionalAssemblies -->
+<!-- Once that is implemented, the main project won't need to include this file -->
+
+<BlazorApp1.Client.Pages.Counter />

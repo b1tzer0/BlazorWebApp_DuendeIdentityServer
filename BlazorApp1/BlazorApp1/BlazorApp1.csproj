@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>05c01ab4-5163-4781-b896-2aa6188436cf</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BlazorApp1.Client\BlazorApp1.Client.csproj" />
+    <PackageReference Include="Duende.AccessTokenManagement" Version="2.0.3" />
+    <PackageReference Include="Duende.AccessTokenManagement.OpenIdConnect" Version="2.0.3" />
+    <PackageReference Include="Duende.BFF" Version="2.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="8.0.0-rc.1.23421.29" />
+  </ItemGroup>
+
+</Project>
